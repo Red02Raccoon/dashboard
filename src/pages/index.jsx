@@ -1,14 +1,3 @@
-export {
-  Area,
-  Bar,
-  ColorMapping,
-  Financial,
-  Line,
-  Pie,
-  Pyramid,
-  Stacked,
-} from "./Charts";
-
 export { default as Calendar } from "./Calendar";
 export { default as ColorPicker } from "./ColorPicker";
 export { default as Customers } from "./Customers";
