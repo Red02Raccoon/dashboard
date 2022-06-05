@@ -22,11 +22,12 @@ import {
   Editor,
   Line,
 } from "./pages";
+import { useStateContext } from "./contexts";
 
 import "./App.css";
 
-const App = () => {
-  const activeMenu = true;
+export const App = () => {
+  const { activeMenu } = useStateContext();
 
   useEffect(() => {
     console.log("useEffect");
