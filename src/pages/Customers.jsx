@@ -12,7 +12,7 @@ import {
   Filter,
 } from "@syncfusion/ej2-react-grids";
 
-import { customersData, customersGrid } from "../data/dummy";
+import { customersData, customersGrid } from "../data";
 import { Header } from "../components";
 
 const Customers = () => {

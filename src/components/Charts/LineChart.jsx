@@ -14,7 +14,7 @@ import {
   lineCustomSeries,
   LinePrimaryXAxis,
   LinePrimaryYAxis,
-} from "../../data/dummy";
+} from "../../data";
 import { useStateContext } from "../../contexts";
 
 const LineChart = () => {

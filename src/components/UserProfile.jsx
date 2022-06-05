@@ -2,9 +2,9 @@ import React from "react";
 import { MdOutlineCancel } from "react-icons/md";
 
 import { Button } from ".";
-import { userProfileData } from "../data/dummy";
+import { userProfileData } from "../data";
 import { useStateContext } from "../contexts";
-import avatar from "../data/avatar.jpg";
+import avatar from "../data/images/avatar.jpg";
 
 const UserProfile = () => {
   const { currentColor } = useStateContext();

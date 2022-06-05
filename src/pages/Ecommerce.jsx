@@ -5,17 +5,18 @@ import { IoIosMore } from "react-icons/io";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 
 import { Stacked, Pie, Button, LineChart, SparkLine } from "../components";
+
 import {
-  earningData,
-  medicalproBranding,
-  recentTransactions,
-  weeklyStats,
-  dropdownData,
-  SparklineAreaData,
   ecomPieChartData,
-} from "../data/dummy";
+  earningData,
+  weeklyStats,
+  recentTransactions,
+  medicalproBranding,
+  dropdownData,
+  sparklineAreaData,
+} from "../data";
 import { useStateContext } from "../contexts";
-import product9 from "../data/product9.jpg";
+import product9 from "../data/images/product9.jpg";
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
@@ -128,7 +129,7 @@ const Ecommerce = () => {
                   type="Line"
                   height="80px"
                   width="250px"
-                  data={SparklineAreaData}
+                  data={sparklineAreaData}
                   color={currentColor}
                 />
               </div>
@@ -168,7 +169,7 @@ const Ecommerce = () => {
                 id="column-sparkLine"
                 height="100px"
                 type="Column"
-                data={SparklineAreaData}
+                data={sparklineAreaData}
                 width="320"
                 color="rgb(242, 252, 253)"
               />
@@ -287,7 +288,7 @@ const Ecommerce = () => {
                 id="area-sparkLine"
                 height="160px"
                 type="Area"
-                data={SparklineAreaData}
+                data={sparklineAreaData}
                 width="320"
                 color="rgb(242, 252, 253)"
               />
